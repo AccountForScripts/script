@@ -1,0 +1,55 @@
+--made by swag#8888
+ 
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Autofarmon = Instance.new("TextButton")
+local Autofarmoff = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+ 
+ 
+ 
+ScreenGui.Parent = game.CoreGui
+ 
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.539118052, 0, 0.474953622, 0)
+Frame.Size = UDim2.new(0, 189, 0, 97)
+Frame.Visible = true
+Frame.Active = true
+Frame.Draggable = true
+ 
+Autofarmon.Name = "Autofarm (on)"
+Autofarmon.Parent = Frame
+Autofarmon.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Autofarmon.Position = UDim2.new(0.0423280448, 0, 0.337937146, 0)
+Autofarmon.Size = UDim2.new(0, 74, 0, 49)
+Autofarmon.Font = Enum.Font.SourceSans
+Autofarmon.Text = "Autofarm (on)"
+Autofarmon.TextColor3 = Color3.fromRGB(0, 0, 0)
+Autofarmon.TextSize = 14.000
+Autofarmon.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/EsQjA8NW",true))()
+end)
+ 
+Autofarmoff.Name = "Autofarm (off)"
+Autofarmoff.Parent = Frame
+Autofarmoff.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Autofarmoff.Position = UDim2.new(0.544973552, 0, 0.337937146, 0)
+Autofarmoff.Size = UDim2.new(0, 74, 0, 49)
+Autofarmoff.Font = Enum.Font.SourceSans
+Autofarmoff.Text = "Autofarm (off)"
+Autofarmoff.TextColor3 = Color3.fromRGB(0, 0, 0)
+Autofarmoff.TextSize = 14.000
+Autofarmoff.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/i1uewSwE",true))()
+end)
+ 
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Size = UDim2.new(0, 189, 0, 25)
+TextLabel.Font = Enum.Font.Highway
+TextLabel.Text = "Animal Sim GUI"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
